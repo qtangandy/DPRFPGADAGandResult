@@ -1,0 +1,53 @@
+//3-LSsolveMIPnSolStatus 2.
+//4-SL 2857.
+//5-LSsolveMIPsolveTime(double) 1.58433.
+//6-reconfigurateNum(int) 6.
+//7-reconfigurateTime(int) 2667.
+digraph test_0 {
+	size="28,40";
+	subgraph cluster0 {
+		stytle=filled;
+		color=blue;
+		label=region_0;
+		reconfNode_0_1 [ shape = box, style = filled, label = "n1_r \n[0,357,357]" ];
+		n1 [ label="n1\n[357,107,464]\n41 " ];
+		reconfNode_0_1 -> n1 [ style = dotted ];
+		n1 -> reconfNode_0_2 [ style = dotted ];
+		reconfNode_0_2 [ shape = box, style = filled, label = "n0_r \n[889,357,1246]" ];
+		n0 [ label="n0\n[1246,170,1416]\n33 " ];
+		reconfNode_0_2 -> n0 [ style = dotted ];
+		n0 -> reconfNode_0_3 [ style = dotted ];
+		reconfNode_0_3 [ shape = box, style = filled, label = "n4_r \n[1778,357,2135]" ];
+		n4 [ label="n4\n[2565,102,2667]\n51 " ];
+		reconfNode_0_3 -> n4 [ style = dotted ];
+	}
+	subgraph cluster1 {
+		stytle=filled;
+		color=blue;
+		label=region_1;
+		reconfNode_1_1 [ shape = box, style = filled, label = "n2_r \n[357,532,889]" ];
+		n2 [ label="n2\n[1149,97,1246]\n76 " ];
+		reconfNode_1_1 -> n2 [ style = dotted ];
+		n2 -> reconfNode_1_2 [ style = dotted ];
+		reconfNode_1_2 [ shape = box, style = filled, label = "n3_r \n[1246,532,1778]" ];
+		n3 [ label="n3\n[2013,122,2135]\n76 " ];
+		reconfNode_1_2 -> n3 [ style = dotted ];
+		n3 -> reconfNode_1_3 [ style = dotted ];
+		reconfNode_1_3 [ shape = box, style = filled, label = "n5_r n6_r n7_r \n[2135,532,2667]" ];
+		n5 [ label="n5\n[2667,139,2806]\n13 " ];
+		n6 [ label="n6\n[2667,178,2845]\n58 " ];
+		n7 [ label="n7\n[2845,12,2857]\n2 " ];
+		reconfNode_1_3 -> n5 [ style = dotted ];
+		reconfNode_1_3 -> n6 [ style = dotted ];
+		reconfNode_1_3 -> n7 [ style = dotted ];
+	}
+	n0 -> n3 [ label="n0_n3\n1" ];
+	n3 -> n5 [ label="n3_n5\n1" ];
+	n3 -> n6 [ label="n3_n6\n1" ];
+	n1 -> n3 [ label="n1_n3\n1" ];
+	n1 -> n4 [ label="n1_n4\n1" ];
+	n4 -> n6 [ label="n4_n6\n1" ];
+	n2 -> n4 [ label="n2_n4\n1" ];
+	n5 -> n7 [ label="n5_n7\n1" ];
+	n6 -> n7 [ label="n6_n7\n1" ];
+}

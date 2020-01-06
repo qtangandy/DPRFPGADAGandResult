@@ -1,0 +1,83 @@
+//3-LSsolveMIPnSolStatus 9.
+//4-SL 5810.
+//5-LSsolveMIPsolveTime(double) 1800.04.
+//6-reconfigurateNum(int) 6.
+//7-reconfigurateTime(int) 5614.
+digraph test_0 {
+	size="28,40";
+	subgraph cluster0 {
+		stytle=filled;
+		color=blue;
+		label=region_0;
+		reconfNode_0_1 [ shape = box, style = filled, label = "n0_r \n[0,392,392]" ];
+		n0 [ label="n0\n[392,98,490]\n51 " ];
+		reconfNode_0_1 -> n0 [ style = dotted ];
+		n0 -> reconfNode_0_2 [ style = dotted ];
+		reconfNode_0_2 [ shape = box, style = filled, label = "n3_r n8_r \n[2135,392,2527]" ];
+		n3 [ label="n3\n[2527,165,2692]\n46 " ];
+		n8 [ label="n8\n[3517,182,3699]\n10 " ];
+		reconfNode_0_2 -> n3 [ style = dotted ];
+		reconfNode_0_2 -> n8 [ style = dotted ];
+		n3 -> reconfNode_0_3 [ style = dotted ];
+		n8 -> reconfNode_0_3 [ style = dotted ];
+		reconfNode_0_3 [ shape = box, style = filled, label = "n13_r \n[5222,392,5614]" ];
+		n13 [ label="n13\n[5614,196,5810]\n56 " ];
+		reconfNode_0_3 -> n13 [ style = dotted ];
+	}
+	subgraph cluster1 {
+		stytle=filled;
+		color=blue;
+		label=region_1;
+		reconfNode_1_1 [ shape = box, style = filled, label = "n2_r n1_r n5_r n7_r \n[392,1743,2135]" ];
+		n2 [ label="n2\n[2135,166,2301]\n77 " ];
+		n1 [ label="n1\n[2431,150,2581]\n37 " ];
+		n5 [ label="n5\n[2581,111,2692]\n44 " ];
+		n7 [ label="n7\n[2692,76,2768]\n91 " ];
+		reconfNode_1_1 -> n2 [ style = dotted ];
+		reconfNode_1_1 -> n1 [ style = dotted ];
+		reconfNode_1_1 -> n5 [ style = dotted ];
+		reconfNode_1_1 -> n7 [ style = dotted ];
+		n2 -> reconfNode_1_2 [ style = dotted ];
+		n1 -> reconfNode_1_2 [ style = dotted ];
+		n5 -> reconfNode_1_2 [ style = dotted ];
+		n7 -> reconfNode_1_2 [ style = dotted ];
+		reconfNode_1_2 [ shape = box, style = filled, label = "n9_r n10_r n11_r n12_r \n[3479,1743,5222]" ];
+		n9 [ label="n9\n[5310,190,5500]\n38 " ];
+		n10 [ label="n10\n[5500,61,5561]\n39 " ];
+		n11 [ label="n11\n[5544,70,5614]\n98 " ];
+		n12 [ label="n12\n[5561,53,5614]\n71 " ];
+		reconfNode_1_2 -> n9 [ style = dotted ];
+		reconfNode_1_2 -> n10 [ style = dotted ];
+		reconfNode_1_2 -> n11 [ style = dotted ];
+		reconfNode_1_2 -> n12 [ style = dotted ];
+	}
+	subgraph cluster2 {
+		stytle=filled;
+		color=blue;
+		label=region_2;
+		reconfNode_2_1 [ shape = box, style = filled, label = "n4_r n6_r \n[2527,952,3479]" ];
+		n4 [ label="n4\n[3479,38,3517]\n55 " ];
+		n6 [ label="n6\n[3479,31,3510]\n81 " ];
+		reconfNode_2_1 -> n4 [ style = dotted ];
+		reconfNode_2_1 -> n6 [ style = dotted ];
+	}
+	n0 -> n1 [ label="n0_n1\n2" ];
+	n0 -> n2 [ label="n0_n2\n2" ];
+	n0 -> n3 [ label="n0_n3\n2" ];
+	n0 -> n4 [ label="n0_n4\n2" ];
+	n1 -> n5 [ label="n1_n5\n2" ];
+	n2 -> n6 [ label="n2_n6\n2" ];
+	n3 -> n7 [ label="n3_n7\n2" ];
+	n4 -> n8 [ label="n4_n8\n2" ];
+	n5 -> n6 [ label="n5_n6\n2" ];
+	n5 -> n7 [ label="n5_n7\n2" ];
+	n5 -> n8 [ label="n5_n8\n2" ];
+	n6 -> n9 [ label="n6_n9\n2" ];
+	n7 -> n10 [ label="n7_n10\n2" ];
+	n8 -> n11 [ label="n8_n11\n2" ];
+	n9 -> n10 [ label="n9_n10\n2" ];
+	n9 -> n11 [ label="n9_n11\n2" ];
+	n10 -> n12 [ label="n10_n12\n2" ];
+	n11 -> n13 [ label="n11_n13\n2" ];
+	n12 -> n13 [ label="n12_n13\n2" ];
+}

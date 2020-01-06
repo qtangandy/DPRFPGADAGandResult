@@ -1,0 +1,119 @@
+//3-LSsolveMIPnSolStatus 9.
+//4-SL 7334.
+//5-LSsolveMIPsolveTime(double) 1800.07.
+//6-reconfigurateNum(int) 11.
+//7-reconfigurateTime(int) 7042.
+digraph test_0 {
+	size="28,40";
+	subgraph cluster0 {
+		stytle=filled;
+		color=blue;
+		label=region_0;
+		reconfNode_0_1 [ shape = box, style = filled, label = "n1_r \n[0,476,476]" ];
+		n1 [ label="n1\n[497,14,511]\n65 " ];
+		reconfNode_0_1 -> n1 [ style = dotted ];
+		n1 -> reconfNode_0_2 [ style = dotted ];
+		reconfNode_0_2 [ shape = box, style = filled, label = "n0_r n3_r n5_r \n[1141,476,1617]" ];
+		n0 [ label="n0\n[1617,49,1666]\n9 " ];
+		n3 [ label="n3\n[1617,180,1797]\n44 " ];
+		n5 [ label="n5\n[1708,63,1771]\n1 " ];
+		reconfNode_0_2 -> n0 [ style = dotted ];
+		reconfNode_0_2 -> n3 [ style = dotted ];
+		reconfNode_0_2 -> n5 [ style = dotted ];
+		n0 -> reconfNode_0_3 [ style = dotted ];
+		n3 -> reconfNode_0_3 [ style = dotted ];
+		n5 -> reconfNode_0_3 [ style = dotted ];
+		reconfNode_0_3 [ shape = box, style = filled, label = "n14_r \n[4599,476,5075]" ];
+		n14 [ label="n14\n[5075,91,5166]\n55 " ];
+		reconfNode_0_3 -> n14 [ style = dotted ];
+		n14 -> reconfNode_0_4 [ style = dotted ];
+		reconfNode_0_4 [ shape = box, style = filled, label = "n18_r n19_r \n[6566,476,7042]" ];
+		n18 [ label="n18\n[7042,93,7135]\n27 " ];
+		n19 [ label="n19\n[7135,199,7334]\n41 " ];
+		reconfNode_0_4 -> n18 [ style = dotted ];
+		reconfNode_0_4 -> n19 [ style = dotted ];
+	}
+	subgraph cluster1 {
+		stytle=filled;
+		color=blue;
+		label=region_1;
+		reconfNode_1_1 [ shape = box, style = filled, label = "n4_r n2_r n6_r \n[1617,826,2443]" ];
+		n4 [ label="n4\n[2443,188,2631]\n29 " ];
+		n2 [ label="n2\n[2443,64,2507]\n31 " ];
+		n6 [ label="n6\n[2549,172,2721]\n55 " ];
+		reconfNode_1_1 -> n4 [ style = dotted ];
+		reconfNode_1_1 -> n2 [ style = dotted ];
+		reconfNode_1_1 -> n6 [ style = dotted ];
+		n4 -> reconfNode_1_2 [ style = dotted ];
+		n2 -> reconfNode_1_2 [ style = dotted ];
+		n6 -> reconfNode_1_2 [ style = dotted ];
+		reconfNode_1_2 [ shape = box, style = filled, label = "n8_r n10_r n15_r \n[3108,826,3934]" ];
+		n8 [ label="n8\n[3934,94,4028]\n23 " ];
+		n10 [ label="n10\n[4028,126,4154]\n57 " ];
+		n15 [ label="n15\n[4692,124,4816]\n38 " ];
+		reconfNode_1_2 -> n8 [ style = dotted ];
+		reconfNode_1_2 -> n10 [ style = dotted ];
+		reconfNode_1_2 -> n15 [ style = dotted ];
+		n8 -> reconfNode_1_3 [ style = dotted ];
+		n10 -> reconfNode_1_3 [ style = dotted ];
+		n15 -> reconfNode_1_3 [ style = dotted ];
+		reconfNode_1_3 [ shape = box, style = filled, label = "n16_r n17_r \n[5740,826,6566]" ];
+		n16 [ label="n16\n[6572,145,6717]\n17 " ];
+		n17 [ label="n17\n[6717,173,6890]\n86 " ];
+		reconfNode_1_3 -> n16 [ style = dotted ];
+		reconfNode_1_3 -> n17 [ style = dotted ];
+	}
+	subgraph cluster2 {
+		stytle=filled;
+		color=blue;
+		label=region_2;
+		reconfNode_2_1 [ shape = box, style = filled, label = "n7_r \n[476,665,1141]" ];
+		n7 [ label="n7\n[1797,62,1859]\n92 " ];
+		reconfNode_2_1 -> n7 [ style = dotted ];
+		n7 -> reconfNode_2_2 [ style = dotted ];
+		reconfNode_2_2 [ shape = box, style = filled, label = "n9_r \n[2443,665,3108]" ];
+		n9 [ label="n9\n[3150,44,3194]\n95 " ];
+		reconfNode_2_2 -> n9 [ style = dotted ];
+		n9 -> reconfNode_2_3 [ style = dotted ];
+		reconfNode_2_3 [ shape = box, style = filled, label = "n11_r n12_r \n[3934,665,4599]" ];
+		n11 [ label="n11\n[4599,91,4690]\n38 " ];
+		n12 [ label="n12\n[4732,166,4898]\n53 " ];
+		reconfNode_2_3 -> n11 [ style = dotted ];
+		reconfNode_2_3 -> n12 [ style = dotted ];
+		n11 -> reconfNode_2_4 [ style = dotted ];
+		n12 -> reconfNode_2_4 [ style = dotted ];
+		reconfNode_2_4 [ shape = box, style = filled, label = "n13_r \n[5075,665,5740]" ];
+		n13 [ label="n13\n[5746,182,5928]\n71 " ];
+		reconfNode_2_4 -> n13 [ style = dotted ];
+	}
+	n0 -> n4 [ label="n0_n4\n2" ];
+	n0 -> n5 [ label="n0_n5\n2" ];
+	n4 -> n10 [ label="n4_n10\n2" ];
+	n5 -> n10 [ label="n5_n10\n2" ];
+	n1 -> n4 [ label="n1_n4\n2" ];
+	n1 -> n5 [ label="n1_n5\n2" ];
+	n1 -> n6 [ label="n1_n6\n2" ];
+	n1 -> n8 [ label="n1_n8\n2" ];
+	n6 -> n10 [ label="n6_n10\n2" ];
+	n8 -> n10 [ label="n8_n10\n2" ];
+	n2 -> n6 [ label="n2_n6\n2" ];
+	n2 -> n14 [ label="n2_n14\n2" ];
+	n14 -> n16 [ label="n14_n16\n2" ];
+	n3 -> n7 [ label="n3_n7\n2" ];
+	n3 -> n8 [ label="n3_n8\n2" ];
+	n3 -> n9 [ label="n3_n9\n2" ];
+	n3 -> n15 [ label="n3_n15\n2" ];
+	n7 -> n10 [ label="n7_n10\n2" ];
+	n9 -> n10 [ label="n9_n10\n2" ];
+	n15 -> n16 [ label="n15_n16\n2" ];
+	n10 -> n11 [ label="n10_n11\n2" ];
+	n11 -> n12 [ label="n11_n12\n2" ];
+	n11 -> n13 [ label="n11_n13\n2" ];
+	n11 -> n14 [ label="n11_n14\n2" ];
+	n11 -> n15 [ label="n11_n15\n2" ];
+	n12 -> n16 [ label="n12_n16\n2" ];
+	n13 -> n16 [ label="n13_n16\n2" ];
+	n16 -> n17 [ label="n16_n17\n2" ];
+	n17 -> n18 [ label="n17_n18\n2" ];
+	n18 -> n19 [ label="n18_n19\n2" ];
+}

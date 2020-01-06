@@ -1,0 +1,21 @@
+digraph test_0 {
+    size="28,40";
+    n0 [ label="n0(0)\n23" ];
+    n3 [ label="n3(3)\n14" ];
+    n1 [ label="n1(1)\n9" ];
+    n4 [ label="n4(4)\n10" ];
+    n2 [ label="n2(2)\n11" ];
+    n5 [ label="n5(5)\n7" ];
+    n6 [ label="n6(6)\n6" ];
+    n7 [ label="n7(7)\n4" ];
+
+    n0 -> n3 [ label="n0_n3\n1" ];
+    n1 -> n3 [ label="n1_n3\n1" ];
+    n1 -> n4 [ label="n1_n4\n1" ];
+    n2 -> n4 [ label="n2_n4\n1" ];
+    n3 -> n5 [ label="n3_n5\n1" ];
+    n3 -> n6 [ label="n3_n6\n1" ];
+    n4 -> n6 [ label="n4_n6\n1" ];
+    n5 -> n7 [ label="n5_n7\n1" ];
+    n6 -> n7 [ label="n6_n7\n1" ];
+}

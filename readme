@@ -1,0 +1,32 @@
+--DAGs 
+	records the used DAG models.
+	--.dag
+		the DAG model.
+		The line begins with tab represents an edge; otherwise, it is a task, which begines with the task name, and followed by the execution time on the FPGA and the CLB number of the task. 
+		The edges of a task is listed after the line of the task, each begines with tab, followed which is the destination task name, edge cost, edge name.
+	--.dot
+		using graphviz to visualize the DAG.
+	
+	
+--results
+	records the partitioning and scheduling results.
+	--Res_0.4
+		results of the experiment with the FPGA resource being 40% of that of the DAG.
+	--Res_0.6
+		results of the experiment with the FPGA resource being 60% of that of the DAG.
+	--MILPforDPRFPGA_heteRes
+		result of nm-ILP
+	--moduleMergeMILPforDPRFPGA_heteRes_gurobi
+		result of mm-ILP
+	--moduleMergeMILPforDPRFPGA_k_heteRes_gurobi
+		result of k-sliced-ILP
+	--extractedResuts.txt
+		records results: SL, time, rNum, rTime
+	--.dot
+		using graphviz to visualize the schedule result.
+		
+
+Author:
+Qi Tang
+q.tang.andy@qq.com
+2020.01.06

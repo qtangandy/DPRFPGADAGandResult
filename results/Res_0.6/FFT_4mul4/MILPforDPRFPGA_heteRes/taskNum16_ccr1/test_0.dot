@@ -1,0 +1,104 @@
+//3-LSsolveMIPnSolStatus 9.
+//4-SL 8631.
+//5-LSsolveMIPsolveTime(double) 1800.05.
+//6-reconfigurateNum(int) 16.
+//7-reconfigurateTime(int) 8561.
+digraph test_0 {
+	size="28,40";
+	subgraph cluster0 {
+		stytle=filled;
+		color=blue;
+		label=region_0;
+		n9_r [ shape = box, style = filled, label = "n9_r\n[1666,567,2233]" ];
+		n9 [ label="n9\n[2233,166,2399]\n-670848496" ];
+		n9_r -> n9 [ style = dotted ];
+		n0_r [ shape = box, style = filled, label = "n0_r\n[2898,567,3465]" ];
+		n0 [ label="n0\n[3465,29,3494]\n-910697200" ];
+		n0_r -> n0 [ style = dotted ];
+		n7_r [ shape = box, style = filled, label = "n7_r\n[4130,567,4697]" ];
+		n7 [ label="n7\n[5388,74,5462]\n-912753920" ];
+		n7_r -> n7 [ style = dotted ];
+		n11_r [ shape = box, style = filled, label = "n11_r\n[5530,567,6097]" ];
+		n11 [ label="n11\n[6097,184,6281]\n0" ];
+		n11_r -> n11 [ style = dotted ];
+		n6_r [ shape = box, style = filled, label = "n6_r\n[6762,567,7329]" ];
+		n6 [ label="n6\n[7329,65,7394]\n144" ];
+		n6_r -> n6 [ style = dotted ];
+		n12_r [ shape = box, style = filled, label = "n12_r\n[7994,567,8561]" ];
+		n12 [ label="n12\n[8561,70,8631]\n83" ];
+		n12_r -> n12 [ style = dotted ];
+		n9 -> n0_r [ style = dotted ];
+		n0 -> n7_r [ style = dotted ];
+		n7 -> n11_r [ style = dotted ];
+		n11 -> n6_r [ style = dotted ];
+		n6 -> n12_r [ style = dotted ];
+	}
+	subgraph cluster1 {
+		stytle=filled;
+		color=blue;
+		label=region_1;
+		n2_r [ shape = box, style = filled, label = "n2_r\n[168,665,833]" ];
+		n2 [ label="n2\n[833,37,870]\n5" ];
+		n2_r -> n2 [ style = dotted ];
+		n1_r [ shape = box, style = filled, label = "n1_r\n[1001,665,1666]" ];
+		n1 [ label="n1\n[2204,29,2233]\n-670984496" ];
+		n1_r -> n1 [ style = dotted ];
+		n8_r [ shape = box, style = filled, label = "n8_r\n[2233,665,2898]" ];
+		n8 [ label="n8\n[2898,49,2947]\n-957133888" ];
+		n8_r -> n8 [ style = dotted ];
+		n10_r [ shape = box, style = filled, label = "n10_r\n[3465,665,4130]" ];
+		n10 [ label="n10\n[4130,170,4300]\n144" ];
+		n10_r -> n10 [ style = dotted ];
+		n4_r [ shape = box, style = filled, label = "n4_r\n[4697,665,5362]" ];
+		n4 [ label="n4\n[5362,26,5388]\n-943911808" ];
+		n4_r -> n4 [ style = dotted ];
+		n15_r [ shape = box, style = filled, label = "n15_r\n[6097,665,6762]" ];
+		n15 [ label="n15\n[7178,151,7329]\n-912754384" ];
+		n15_r -> n15 [ style = dotted ];
+		n14_r [ shape = box, style = filled, label = "n14_r\n[7329,665,7994]" ];
+		n14 [ label="n14\n[8063,123,8186]\n-938450528" ];
+		n14_r -> n14 [ style = dotted ];
+		n2 -> n1_r [ style = dotted ];
+		n1 -> n8_r [ style = dotted ];
+		n8 -> n10_r [ style = dotted ];
+		n10 -> n4_r [ style = dotted ];
+		n4 -> n15_r [ style = dotted ];
+		n15 -> n14_r [ style = dotted ];
+	}
+	subgraph cluster2 {
+		stytle=filled;
+		color=blue;
+		label=region_2;
+		n3_r [ shape = box, style = filled, label = "n3_r\n[0,168,168]" ];
+		n3 [ label="n3\n[168,128,296]\n0" ];
+		n3_r -> n3 [ style = dotted ];
+		n5_r [ shape = box, style = filled, label = "n5_r\n[833,168,1001]" ];
+		n5 [ label="n5\n[1001,179,1180]\n-670848256" ];
+		n5_r -> n5 [ style = dotted ];
+		n13_r [ shape = box, style = filled, label = "n13_r\n[5362,168,5530]" ];
+		n13 [ label="n13\n[6281,186,6467]\n-957133888" ];
+		n13_r -> n13 [ style = dotted ];
+		n3 -> n5_r [ style = dotted ];
+		n5 -> n13_r [ style = dotted ];
+	}
+	n0 -> n6 [ label="n0_n6\n2" ];
+	n0 -> n7 [ label="n0_n7\n2" ];
+	n6 -> n12 [ label="n6_n12\n2" ];
+	n6 -> n14 [ label="n6_n14\n2" ];
+	n7 -> n13 [ label="n7_n13\n2" ];
+	n7 -> n15 [ label="n7_n15\n2" ];
+	n1 -> n8 [ label="n1_n8\n2" ];
+	n1 -> n9 [ label="n1_n9\n2" ];
+	n8 -> n10 [ label="n8_n10\n2" ];
+	n9 -> n11 [ label="n9_n11\n2" ];
+	n2 -> n4 [ label="n2_n4\n2" ];
+	n4 -> n6 [ label="n4_n6\n2" ];
+	n4 -> n7 [ label="n4_n7\n2" ];
+	n3 -> n5 [ label="n3_n5\n2" ];
+	n5 -> n8 [ label="n5_n8\n2" ];
+	n5 -> n9 [ label="n5_n9\n2" ];
+	n10 -> n12 [ label="n10_n12\n2" ];
+	n10 -> n14 [ label="n10_n14\n2" ];
+	n11 -> n13 [ label="n11_n13\n2" ];
+	n11 -> n15 [ label="n11_n15\n2" ];
+}

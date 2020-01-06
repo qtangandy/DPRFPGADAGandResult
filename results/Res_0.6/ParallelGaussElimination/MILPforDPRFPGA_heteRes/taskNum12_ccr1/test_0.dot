@@ -1,0 +1,85 @@
+//3-LSsolveMIPnSolStatus 2.
+//4-SL 4415.
+//5-LSsolveMIPsolveTime(double) 149.939.
+//6-reconfigurateNum(int) 12.
+//7-reconfigurateTime(int) 4340.
+digraph test_0 {
+	size="28,40";
+	subgraph cluster0 {
+		stytle=filled;
+		color=blue;
+		label=region_0;
+		n0_r [ shape = box, style = filled, label = "n0_r\n[0,644,644]" ];
+		n0 [ label="n0\n[644,75,719]\n0" ];
+		n0_r -> n0 [ style = dotted ];
+		n3_r [ shape = box, style = filled, label = "n3_r\n[812,644,1456]" ];
+		n3 [ label="n3\n[1456,136,1592]\n-1111808256" ];
+		n3_r -> n3 [ style = dotted ];
+		n4_r [ shape = box, style = filled, label = "n4_r\n[1932,644,2576]" ];
+		n4 [ label="n4\n[2576,47,2623]\n-1108290640" ];
+		n4_r -> n4 [ style = dotted ];
+		n8_r [ shape = box, style = filled, label = "n8_r\n[3052,644,3696]" ];
+		n8 [ label="n8\n[3696,75,3771]\n0" ];
+		n8_r -> n8 [ style = dotted ];
+		n0 -> n3_r [ style = dotted ];
+		n3 -> n4_r [ style = dotted ];
+		n4 -> n8_r [ style = dotted ];
+	}
+	subgraph cluster1 {
+		stytle=filled;
+		color=blue;
+		label=region_1;
+		n2_r [ shape = box, style = filled, label = "n2_r\n[644,168,812]" ];
+		n2 [ label="n2\n[812,161,973]\n-1115236960" ];
+		n2_r -> n2 [ style = dotted ];
+		n5_r [ shape = box, style = filled, label = "n5_r\n[1456,168,1624]" ];
+		n5 [ label="n5\n[1624,138,1762]\n-1112068960" ];
+		n5_r -> n5 [ style = dotted ];
+		n10_r [ shape = box, style = filled, label = "n10_r\n[2576,168,2744]" ];
+		n10 [ label="n10\n[3068,159,3227]\n0" ];
+		n10_r -> n10 [ style = dotted ];
+		n11_r [ shape = box, style = filled, label = "n11_r\n[3696,168,3864]" ];
+		n11 [ label="n11\n[3864,187,4051]\n0" ];
+		n11_r -> n11 [ style = dotted ];
+		n6_r [ shape = box, style = filled, label = "n6_r\n[4172,168,4340]" ];
+		n6 [ label="n6\n[4340,75,4415]\n0" ];
+		n6_r -> n6 [ style = dotted ];
+		n2 -> n5_r [ style = dotted ];
+		n5 -> n10_r [ style = dotted ];
+		n10 -> n11_r [ style = dotted ];
+		n11 -> n6_r [ style = dotted ];
+	}
+	subgraph cluster2 {
+		stytle=filled;
+		color=blue;
+		label=region_2;
+		n7_r [ shape = box, style = filled, label = "n7_r\n[1624,308,1932]" ];
+		n7 [ label="n7\n[1932,62,1994]\n0" ];
+		n7_r -> n7 [ style = dotted ];
+		n9_r [ shape = box, style = filled, label = "n9_r\n[2744,308,3052]" ];
+		n9 [ label="n9\n[3052,16,3068]\n-1111714512" ];
+		n9_r -> n9 [ style = dotted ];
+		n1_r [ shape = box, style = filled, label = "n1_r\n[3864,308,4172]" ];
+		n1 [ label="n1\n[4299,116,4415]\n0" ];
+		n1_r -> n1 [ style = dotted ];
+		n7 -> n9_r [ style = dotted ];
+		n9 -> n1_r [ style = dotted ];
+	}
+	n0 -> n1 [ label="n0_n1\n2" ];
+	n0 -> n2 [ label="n0_n2\n2" ];
+	n0 -> n3 [ label="n0_n3\n2" ];
+	n0 -> n4 [ label="n0_n4\n2" ];
+	n0 -> n5 [ label="n0_n5\n2" ];
+	n2 -> n5 [ label="n2_n5\n2" ];
+	n2 -> n6 [ label="n2_n6\n2" ];
+	n3 -> n7 [ label="n3_n7\n2" ];
+	n4 -> n8 [ label="n4_n8\n2" ];
+	n5 -> n6 [ label="n5_n6\n2" ];
+	n5 -> n7 [ label="n5_n7\n2" ];
+	n5 -> n8 [ label="n5_n8\n2" ];
+	n7 -> n9 [ label="n7_n9\n2" ];
+	n7 -> n10 [ label="n7_n10\n2" ];
+	n8 -> n11 [ label="n8_n11\n2" ];
+	n9 -> n10 [ label="n9_n10\n2" ];
+	n9 -> n11 [ label="n9_n11\n2" ];
+}

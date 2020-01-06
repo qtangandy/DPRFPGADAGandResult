@@ -1,0 +1,144 @@
+//3-LSsolveMIPnSolStatus 9.
+//4-SL 11800.
+//5-LSsolveMIPsolveTime(double) 1800.02.
+//6-reconfigurateNum(int) 24.
+//7-reconfigurateTime(int) 11494.
+digraph test_0 {
+	size="28,40";
+	subgraph cluster0 {
+		stytle=filled;
+		color=blue;
+		label=region_0;
+		n0_r [ shape = box, style = filled, label = "n0_r\n[0,560,560]" ];
+		n0 [ label="n0\n[560,53,613]\n0" ];
+		n0_r -> n0 [ style = dotted ];
+		n2_r [ shape = box, style = filled, label = "n2_r\n[1260,560,1820]" ];
+		n2 [ label="n2\n[1820,76,1896]\n48" ];
+		n2_r -> n2 [ style = dotted ];
+		n3_r [ shape = box, style = filled, label = "n3_r\n[2520,560,3080]" ];
+		n3 [ label="n3\n[3080,26,3106]\n69" ];
+		n3_r -> n3 [ style = dotted ];
+		n4_r [ shape = box, style = filled, label = "n4_r\n[3106,560,3666]" ];
+		n4 [ label="n4\n[3666,61,3727]\n0" ];
+		n4_r -> n4 [ style = dotted ];
+		n7_r [ shape = box, style = filled, label = "n7_r\n[4898,560,5458]" ];
+		n7 [ label="n7\n[5606,15,5621]\n-120047648" ];
+		n7_r -> n7 [ style = dotted ];
+		n13_r [ shape = box, style = filled, label = "n13_r\n[6424,560,6984]" ];
+		n13 [ label="n13\n[6984,182,7166]\n60" ];
+		n13_r -> n13 [ style = dotted ];
+		n15_r [ shape = box, style = filled, label = "n15_r\n[7684,560,8244]" ];
+		n15 [ label="n15\n[8327,183,8510]\n-116658464" ];
+		n15_r -> n15 [ style = dotted ];
+		n21_r [ shape = box, style = filled, label = "n21_r\n[8510,560,9070]" ];
+		n21 [ label="n21\n[9070,166,9236]\n0" ];
+		n21_r -> n21 [ style = dotted ];
+		n11_r [ shape = box, style = filled, label = "n11_r\n[9623,560,10183]" ];
+		n11 [ label="n11\n[10183,178,10361]\n-116999600" ];
+		n11_r -> n11 [ style = dotted ];
+		n23_r [ shape = box, style = filled, label = "n23_r\n[10782,560,11342]" ];
+		n23 [ label="n23\n[11694,106,11800]\n128974032" ];
+		n23_r -> n23 [ style = dotted ];
+		n0 -> n2_r [ style = dotted ];
+		n2 -> n3_r [ style = dotted ];
+		n3 -> n4_r [ style = dotted ];
+		n4 -> n7_r [ style = dotted ];
+		n7 -> n13_r [ style = dotted ];
+		n13 -> n15_r [ style = dotted ];
+		n15 -> n21_r [ style = dotted ];
+		n21 -> n11_r [ style = dotted ];
+		n11 -> n23_r [ style = dotted ];
+	}
+	subgraph cluster1 {
+		stytle=filled;
+		color=blue;
+		label=region_1;
+		n1_r [ shape = box, style = filled, label = "n1_r\n[560,700,1260]" ];
+		n1 [ label="n1\n[1260,117,1377]\n432" ];
+		n1_r -> n1 [ style = dotted ];
+		n6_r [ shape = box, style = filled, label = "n6_r\n[1820,700,2520]" ];
+		n6 [ label="n6\n[3727,76,3803]\n0" ];
+		n6_r -> n6 [ style = dotted ];
+		n10_r [ shape = box, style = filled, label = "n10_r\n[3932,700,4632]" ];
+		n10 [ label="n10\n[5621,103,5724]\n0" ];
+		n10_r -> n10 [ style = dotted ];
+		n9_r [ shape = box, style = filled, label = "n9_r\n[5724,700,6424]" ];
+		n9 [ label="n9\n[6885,99,6984]\n3" ];
+		n9_r -> n9 [ style = dotted ];
+		n14_r [ shape = box, style = filled, label = "n14_r\n[6984,700,7684]" ];
+		n14 [ label="n14\n[7684,87,7771]\n274323472" ];
+		n14_r -> n14 [ style = dotted ];
+		n1 -> n6_r [ style = dotted ];
+		n6 -> n10_r [ style = dotted ];
+		n10 -> n9_r [ style = dotted ];
+		n9 -> n14_r [ style = dotted ];
+	}
+	subgraph cluster2 {
+		stytle=filled;
+		color=blue;
+		label=region_2;
+		n5_r [ shape = box, style = filled, label = "n5_r\n[3666,266,3932]" ];
+		n5 [ label="n5\n[3932,11,3943]\n-116611840" ];
+		n5_r -> n5 [ style = dotted ];
+		n8_r [ shape = box, style = filled, label = "n8_r\n[4632,266,4898]" ];
+		n8 [ label="n8\n[5380,78,5458]\n-127285648" ];
+		n8_r -> n8 [ style = dotted ];
+		n12_r [ shape = box, style = filled, label = "n12_r\n[5458,266,5724]" ];
+		n12 [ label="n12\n[5724,116,5840]\n0" ];
+		n12_r -> n12 [ style = dotted ];
+		n16_r [ shape = box, style = filled, label = "n16_r\n[8244,266,8510]" ];
+		n16 [ label="n16\n[8510,152,8662]\n125335008" ];
+		n16_r -> n16 [ style = dotted ];
+		n17_r [ shape = box, style = filled, label = "n17_r\n[9070,266,9336]" ];
+		n17 [ label="n17\n[9336,21,9357]\n-86331904" ];
+		n17_r -> n17 [ style = dotted ];
+		n22_r [ shape = box, style = filled, label = "n22_r\n[9357,266,9623]" ];
+		n22 [ label="n22\n[10086,97,10183]\n223987792" ];
+		n22_r -> n22 [ style = dotted ];
+		n18_r [ shape = box, style = filled, label = "n18_r\n[10183,266,10449]" ];
+		n18 [ label="n18\n[10449,67,10516]\n-116855280" ];
+		n18_r -> n18 [ style = dotted ];
+		n19_r [ shape = box, style = filled, label = "n19_r\n[10516,266,10782]" ];
+		n19 [ label="n19\n[10782,195,10977]\n0" ];
+		n19_r -> n19 [ style = dotted ];
+		n20_r [ shape = box, style = filled, label = "n20_r\n[11342,266,11608]" ];
+		n20 [ label="n20\n[11608,192,11800]\n234515584" ];
+		n20_r -> n20 [ style = dotted ];
+		n5 -> n8_r [ style = dotted ];
+		n8 -> n12_r [ style = dotted ];
+		n12 -> n16_r [ style = dotted ];
+		n16 -> n17_r [ style = dotted ];
+		n17 -> n22_r [ style = dotted ];
+		n22 -> n18_r [ style = dotted ];
+		n18 -> n19_r [ style = dotted ];
+		n19 -> n20_r [ style = dotted ];
+	}
+	n0 -> n1 [ label="n0_n1\n2" ];
+	n1 -> n2 [ label="n1_n2\n2" ];
+	n1 -> n3 [ label="n1_n3\n2" ];
+	n2 -> n4 [ label="n2_n4\n2" ];
+	n3 -> n6 [ label="n3_n6\n2" ];
+	n4 -> n5 [ label="n4_n5\n2" ];
+	n4 -> n6 [ label="n4_n6\n2" ];
+	n6 -> n8 [ label="n6_n8\n2" ];
+	n5 -> n7 [ label="n5_n7\n2" ];
+	n5 -> n8 [ label="n5_n8\n2" ];
+	n7 -> n9 [ label="n7_n9\n2" ];
+	n7 -> n10 [ label="n7_n10\n2" ];
+	n8 -> n10 [ label="n8_n10\n2" ];
+	n9 -> n11 [ label="n9_n11\n2" ];
+	n9 -> n13 [ label="n9_n13\n2" ];
+	n10 -> n12 [ label="n10_n12\n2" ];
+	n13 -> n15 [ label="n13_n15\n2" ];
+	n12 -> n13 [ label="n12_n13\n2" ];
+	n12 -> n14 [ label="n12_n14\n2" ];
+	n14 -> n16 [ label="n14_n16\n2" ];
+	n15 -> n16 [ label="n15_n16\n2" ];
+	n16 -> n17 [ label="n16_n17\n2" ];
+	n16 -> n21 [ label="n16_n21\n2" ];
+	n17 -> n18 [ label="n17_n18\n2" ];
+	n21 -> n22 [ label="n21_n22\n2" ];
+	n18 -> n19 [ label="n18_n19\n2" ];
+	n19 -> n20 [ label="n19_n20\n2" ];
+	n22 -> n23 [ label="n22_n23\n2" ];
+}
